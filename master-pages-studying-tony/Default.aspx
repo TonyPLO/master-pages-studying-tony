@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Tony.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="master_pages_studying_tony._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
