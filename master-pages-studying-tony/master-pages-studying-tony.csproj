@@ -223,6 +223,11 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\UFC\Competition.cs" />
+    <Compile Include="Models\UFC\ObjectBasicsDemo.cs" />
+    <Compile Include="Models\UFC\Round.cs" />
+    <Compile Include="Models\UFC\Stadium.cs" />
+    <Compile Include="Models\UFC\UFCFighter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tony.Master.cs">
       <DependentUpon>Tony.Master</DependentUpon>
