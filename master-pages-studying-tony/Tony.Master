@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Tony.Master.cs" Inherits="master_pages_studying_tony.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <h1>blabla</h1>
+            <a href="WebForm1.aspx">דף מספר 1</a>
+            <a href="WebForm2.aspx">דף מספר 2</a>
+        </div>
+    </form>
+</body>
+</html>
