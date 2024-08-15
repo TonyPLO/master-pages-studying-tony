@@ -156,6 +156,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="FightersPage.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -264,6 +265,13 @@
     </Compile>
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FightersPage.aspx.cs">
+      <DependentUpon>FightersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FightersPage.aspx.designer.cs">
+      <DependentUpon>FightersPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

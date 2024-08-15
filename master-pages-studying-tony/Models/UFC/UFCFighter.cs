@@ -53,6 +53,10 @@ namespace master_pages_studying_tony.Models.UFC
         {
             return Record[0] > Record[1];
         }
+        public override string ToString()
+        {
+            return $"name={Name},Weight: {Weight},Height: {Height}";
+        }
     }
 
     
