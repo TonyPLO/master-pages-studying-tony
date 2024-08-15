@@ -18,10 +18,10 @@
             <a href="WebForm1.aspx">דף מספר 1</a>
             <a href="WebForm2.aspx">דף מספר 2</a>
 
-           <!-- <label id="myLabel">ערך ראשוני</label>
+           <label id="myLabel">ערך ראשוני</label>
             <br>
             <button id="myButton">שנה ערך</button>
-            <script src="JavaScript.js"></script> -->
+            <script src="JavaScript.js"></script> 
         </div>
     </form>
 </body>
