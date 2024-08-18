@@ -21,5 +21,18 @@ namespace master_pages_studying_tony
         {
             myText.Text = "UFC";
         }
+        protected void AddNewFighter(object sender, EventArgs e)
+        {
+            //UFCFighter fighter2 = new UFCFighter("Francis Ngannou", 119, 193, 210, 17, 3, 0);
+            //UFCFighter fighter3 = new UFCFighter("Tyson Fury", 115, 206, 185, 30, 0, 1);
+            // Retrieve values from TextBox controls
+            string name = NameInput.Text;
+            //string sign = SignInput.Text;
+            int height = int.Parse(HeightInput.Text);
+            UFCFighter fighter2 = new UFCFighter(name, 119,height, 210, 17, 3, 0);
+            uFCFighters.Add(fighter2);
+            Fighters.DataBind();
+        }
+
     }
 }

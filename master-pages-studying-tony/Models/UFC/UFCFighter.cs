@@ -13,7 +13,8 @@ namespace master_pages_studying_tony.Models.UFC
         public int Height { get; set; }
         public int PowerPunch { get; set; }
         public int[] Record { get; set; } = new int[3]; // wins, losses, draws
-
+        public DateTime LastBattle { get; set; } = DateTime.Now;
+        public bool IsHeavy { get; set; } = true;
 
         //constructor - בנאי
         public UFCFighter(string name, int weight, int height, int powerPunch, int wins, int losses, int draws)
@@ -58,6 +59,4 @@ namespace master_pages_studying_tony.Models.UFC
             return $"name={Name},Weight: {Weight},Height: {Height}";
         }
     }
-
-    
 }
