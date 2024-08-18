@@ -22,7 +22,7 @@
                 Name = <%# Eval("Name") %> 
                 HasPositiveRecord = <%# ((master_pages_studying_tony.Models.UFC.UFCFighter)Container.DataItem).HasPositiveRecord() %>
                 LastBattle = <%# ((master_pages_studying_tony.Models.UFC.UFCFighter)Container.DataItem).LastBattle.ToString("dd/MM/yy") %> 
-                IsHeavy = <%# ((master_pages_studying_tony.Models.UFC.UFCFighter)Container.DataItem).IsHeavy %> 
+                IsHeavy = <%# ((master_pages_studying_tony.Models.UFC.UFCFighter)Container.DataItem).IsHeavy %>
             </p>
         </ItemTemplate>
     </asp:Repeater>
@@ -30,7 +30,7 @@
         <asp:Label ID="Name" runat="server" Text="Name:"></asp:Label>
         <asp:TextBox ID="NameInput" runat="server"></asp:TextBox>
 
-      <%-- <asp:Label ID="lblSign" runat="server" Text="Sign:"></asp:Label>--%>
+        <%-- <asp:Label ID="lblSign" runat="server" Text="Sign:"></asp:Label>--%>
 
         <%--        <asp:RequiredFieldValidator 
             ID="rfv" 
@@ -39,9 +39,12 @@
             ErrorMessage="חייב לרשום טקסט" 
             ForeColor="Green" />--%>
 
-      <%--  <asp:TextBox ID="SignInput" runat="server"></asp:TextBox>--%>
+        <%--  <asp:TextBox ID="SignInput" runat="server"></asp:TextBox>--%>
         <asp:Label ID="Height" runat="server" Text="Height:"></asp:Label>
         <asp:TextBox ID="HeightInput" runat="server" TextMode="Number"></asp:TextBox>
+
+        <asp:Label ID="Label1" runat="server" Text="IsHeavy:"></asp:Label>
+        <asp:CheckBox ID="IsHeavyInput" runat="server" Text="Is Heavy" />
 
         <asp:Button ID="Button3" runat="server" Text="Add New Fighter" OnClick="AddNewFighter" />
 

@@ -13,9 +13,13 @@ namespace master_pages_studying_tony
         public static List<UFCFighter> uFCFighters = new List<UFCFighter>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            uFCFighters = UFCService.CreateData();
-            Fighters.DataSource = uFCFighters;
-            Fighters.DataBind();
+            //קורה רק בתחילת הדף ולא בכל שינוי
+            if (!IsPostBack)
+            {
+                uFCFighters = UFCService.CreateData();
+                Fighters.DataSource = uFCFighters;
+                Fighters.DataBind();
+            }
         }
         protected void ChangeText(object sender, EventArgs e)
         {
@@ -30,6 +34,7 @@ namespace master_pages_studying_tony
             //string sign = SignInput.Text;
             int height = int.Parse(HeightInput.Text);
             UFCFighter fighter2 = new UFCFighter(name, 119,height, 210, 17, 3, 0);
+            fighter2.IsHeavy = IsHeavyInput.Checked;
             uFCFighters.Add(fighter2);
             Fighters.DataBind();
         }
