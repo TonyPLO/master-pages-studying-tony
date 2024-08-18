@@ -35,7 +35,18 @@ namespace master_pages_studying_tony
             int height = int.Parse(HeightInput.Text);
             UFCFighter fighter2 = new UFCFighter(name, 119,height, 210, 17, 3, 0);
             fighter2.IsHeavy = IsHeavyInput.Checked;
-            uFCFighters.Add(fighter2);
+
+            string selectedDate = Birthday.Text;
+            DateTime parsedDate;
+
+            if (DateTime.TryParse(selectedDate, out parsedDate))
+            {
+                // Use the parsedDate as needed
+                // Example: Show it in a label or use it in logic
+                fighter2.LastBattle = parsedDate;
+            }
+        uFCFighters.Add(fighter2);
+            Fighters.DataSource = uFCFighters;
             Fighters.DataBind();
         }
 

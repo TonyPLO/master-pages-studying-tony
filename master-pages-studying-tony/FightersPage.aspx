@@ -43,8 +43,11 @@
         <asp:Label ID="Height" runat="server" Text="Height:"></asp:Label>
         <asp:TextBox ID="HeightInput" runat="server" TextMode="Number"></asp:TextBox>
 
-        <asp:Label ID="Label1" runat="server" Text="IsHeavy:"></asp:Label>
         <asp:CheckBox ID="IsHeavyInput" runat="server" Text="Is Heavy" />
+
+        <asp:Label ID="LastBattel" runat="server" Text="Date:"></asp:Label>
+
+        <asp:TextBox ID="Birthday" runat="server" TextMode="Date"></asp:TextBox>
 
         <asp:Button ID="Button3" runat="server" Text="Add New Fighter" OnClick="AddNewFighter" />
 
