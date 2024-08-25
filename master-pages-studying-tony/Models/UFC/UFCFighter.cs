@@ -8,6 +8,7 @@ namespace master_pages_studying_tony.Models.UFC
 {
     public class UFCFighter
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public int Weight { get; set; }
         public int Height { get; set; }

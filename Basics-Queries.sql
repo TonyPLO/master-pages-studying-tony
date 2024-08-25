@@ -8,8 +8,8 @@
 --INSERT INTO UFC_Fighters(Name, Height)
 --VALUES ('mike tyson', 196);
 
---INSERT INTO UFC_Fighters 
---VALUES (1488,'mike nuse', 587,'2001-09-11');
+--insert into ufc_fighters 
+--values (1488,'mike nuse', 587,'2001-09-11');
 
 ----UPDATE UFC_Fighters
 ----SET id = 911, Birthday= '0001-10-11'

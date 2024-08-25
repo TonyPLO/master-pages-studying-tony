@@ -18,6 +18,7 @@
             <a href="WebForm1.aspx">דף מספר 1</a>
             <a href="WebForm2.aspx">דף מספר 2</a>
             <a href="FightersPage.aspx">FightersList</a>
+            <a href="FightersPageDB.aspx">FightersPageDB</a>
 
            <label id="myLabel">ערך ראשוני</label>
             <br>
